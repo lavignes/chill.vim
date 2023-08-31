@@ -23,7 +23,6 @@ syn match chlDec "[0-9][0-9_]*"
 syn match chlHex "0x[0-9a-fA-F][0-9a-fA-F_]*"
 syn match chlBin "0b[01][01_]*"
 syn keyword chlBool true false
-syn match chlUnit "{}"
 
 syn match chlByte contained "\\x[0-9a-fA-F][0-9a-fA-F]"
 
@@ -44,7 +43,6 @@ hi def link chlDec Number
 hi def link chlHex Number
 hi def link chlBin Number
 hi def link chlBool Constant
-hi def link chlUnit Constant
 hi def link chlByte Constant
 hi def link chlStr String
 hi def link chlChar Character
