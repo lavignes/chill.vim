@@ -26,7 +26,7 @@ syn match chlByte contained "\\x[0-9a-fA-F]{2}"
 syn region chlStr start="\"" skip="\\\"" end="\"" keepend contains=chlByte
 syn region chlChar start="'" end="\\'" end="'" keepend contains=chlByte
 
-syn region chlFunction start="fn\s*" ms=e+1 end="\(" me=s-1
+syn region chlFunction start="fn\s*"ms=e+1 end="\("me=s-1
 
 syn region chlComment start="//" end="$" keepend contains=chlTodo
 
