@@ -2,9 +2,9 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn keyword chlKeyword use type pkg nextgroup=chlIdentifier skipwhite skipempty
+syn keyword chlKeyword use type pkg
 syn keyword chlKeyword fn nextgroup=chlFunction skipwhite skipempty
-syn keyword chlStatement let return continue break nextgroup=chlIdentifier skipwhite skipempty
+syn keyword chlStatement let return continue break
 syn keyword chlConditional if else
 syn keyword chlLoop for
 syn keyword chlQualifier pub mut extern union
@@ -33,7 +33,6 @@ syn region chlChar start="'" end="\\'" end="'" keepend contains=chlByte
 syn region chlComment start="//" end="$" keepend contains=chlTodo
 
 hi def link chlKeyword Keyword
-hi def link chlIdentifier Identifier
 hi def link chlStatement Statement
 hi def link chlConditional Conditional
 hi def link chlLoop Repeat
