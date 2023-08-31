@@ -39,7 +39,6 @@ hi def link chlConditional Conditional
 hi def link chlLoop Repeat
 hi def link chlQualifier StorageClass
 hi def link chlOperator Operator
-hi def link chlOtherOperator Operator
 hi def link chlTodo Todo
 hi def link chlType Type
 hi def link chlDec Number
