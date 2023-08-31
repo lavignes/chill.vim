@@ -2,7 +2,8 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn keyword chlKeyword fn use type pkg
+syn keyword chlKeyword use type pkg
+syn keyword chlKeyword fn nextgroup=chlFunction
 syn keyword chlStatement let return continue break
 syn keyword chlConditional if else
 syn keyword chlLoop for
@@ -17,6 +18,7 @@ syn keyword chlType U8 I8 U16 I16 U32 I32 U64 I64 UInt Int
 syn keyword chlType Any
 
 syn match chlIdentifier "[a-zA-Z_][a-zA-Z0-9_]*"
+syn match chlFunction "[a-zA-Z_][a-zA-Z0-9_]*"
 syn match chlDec "[0-9][0-9_]*"
 syn match chlHex "0x[0-9a-fA-F][0-9a-fA-F_]*"
 syn match chlBin "0b[01][01_]*"
@@ -27,8 +29,6 @@ syn match chlByte contained "\\x[0-9a-fA-F][0-9a-fA-F]"
 
 syn region chlStr start="\"" skip="\\\"" end="\"" keepend contains=chlByte
 syn region chlChar start="'" end="\\'" end="'" keepend contains=chlByte
-
-syn region chlFunction start="fn\s*"ms=e+1 end="("me=s-1
 
 syn region chlComment start="//" end="$" keepend contains=chlTodo
 
