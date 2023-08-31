@@ -33,7 +33,7 @@ syn region chlChar start="'" end="\\'" end="'" keepend contains=chlByte
 syn region chlComment start="//" end="$" keepend contains=chlTodo
 
 hi def link chlKeyword Keyword
-hi def link chlKeyword Identifier
+hi def link chlIdentifier Identifier
 hi def link chlStatement Statement
 hi def link chlConditional Conditional
 hi def link chlLoop Repeat
