@@ -8,8 +8,8 @@ syn keyword chlConditional if else
 syn keyword chlLoop for
 syn keyword chlQualifier pub mut extern union
 syn keyword chlOperator sizeof as
-syn match chlOperator "%|\||\|=|\|\||<<|>>|\^|&|\*|!|\+"
-syn match chlOperator "-|/|<|>|<=|>=|==|!=|\+=|-=|/=|%=|<<=|>>=|\^=|&=|&&"
+syn match chlOtherOperator "%|\||\|=|\|\||<<|>>|\^|&|\*|!|\+"
+syn match chlOtherOperator "-|/|<|>|<=|>=|==|!=|\+=|-=|/=|%=|<<=|>>=|\^=|&=|&&"
 syn keyword chlTodo contained TODO FIXME XXX
 
 syn keyword chlType Bool
@@ -38,6 +38,7 @@ hi def link chlConditional Conditional
 hi def link chlLoop Repeat
 hi def link chlQualifier StorageClass
 hi def link chlOperator Operator
+hi def link chlOtherOperator Operator
 hi def link chlTodo Todo
 hi def link chlType Type
 hi def link chlDec Number
