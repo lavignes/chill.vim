@@ -7,8 +7,7 @@ syn keyword chlStatement let return continue break
 syn keyword chlConditional if else
 syn keyword chlLoop for
 syn keyword chlQualifier pub mut extern union
-syn keyword chlSizeof sizeof
-syn keyword chlAs as
+syn keyword chlOperator sizeof as << >> ^ & | * ! + - / % < > <= >= == != += -= *= /= %= <<= >>= ^= &= |= && ||
 syn keyword chlTodo contained TODO FIXME XXX
 
 syn keyword chlType Bool
@@ -20,6 +19,7 @@ syn match chlDec "[0-9][0-9_]*"
 syn match chlHex "0x[0-9a-fA-F][0-9a-fA-F_]*"
 syn match chlBin "0b[01][01_]*"
 syn keyword chlBool true false
+syn keyword chlUnit {}
 
 syn match chlByte contained "\\x[0-9a-fA-F]{2}"
 
@@ -35,8 +35,7 @@ hi def link chlStatement Statement
 hi def link chlConditional Conditional
 hi def link chlLoop Repeat
 hi def link chlQualifier StorageClass
-hi def link chlSizeof Operator
-hi def link chlAs Operator
+hi def link chlOperator Operator
 hi def link chlTodo Todo
 hi def link chlType Type
 hi def link chlDec Number
@@ -44,6 +43,7 @@ hi def link chlHex Number
 hi def link chlBin Number
 hi def link chlIdentifier Identifier
 hi def link chlBool Constant
+hi def link chlUnit Constant
 hi def link chlByte Constant
 hi def link chlStr String
 hi def link chlChar Character
