@@ -19,9 +19,9 @@ syn keyword chlType Any
 
 syn match chlIdentifier "[a-zA-Z_][a-zA-Z0-9_]*"
 syn match chlFunction "[a-zA-Z_][a-zA-Z0-9_]*" display contained
-syn match chlDec "[0-9][0-9_]*([uiUI](8\|16\|32\|64)\?)\?"
-syn match chlHex "0x[0-9a-fA-F][0-9a-fA-F_]*([uiUI](8\|16\|32\|64)\?)\?"
-syn match chlBin "0b[01][01_]*([uiUI](8\|16\|32\|64)\?)\?"
+syn match chlDec "[0-9][0-9_]*([uiUI](8\|16\|32\|64)?)?"
+syn match chlHex "0x[0-9a-fA-F][0-9a-fA-F_]*([uiUI](8\|16\|32\|64)?)?"
+syn match chlBin "0b[01][01_]*([uiUI](8\|16\|32\|64)?)?"
 syn keyword chlBool true false
 
 syn match chlByte contained "\\x[0-9a-fA-F][0-9a-fA-F]"
