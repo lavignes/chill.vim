@@ -45,7 +45,6 @@ hi def link chlType Type
 hi def link chlDec Number
 hi def link chlHex Number
 hi def link chlBin Number
-hi def link chlIdentifier Identifier
 hi def link chlBool Constant
 hi def link chlUnit Constant
 hi def link chlByte Constant
