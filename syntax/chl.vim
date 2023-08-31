@@ -25,7 +25,7 @@ syn match chlBin "0b[01][01_]*"
 syn keyword chlBool true false
 syn keyword chlUnit {}
 
-syn match chlByte contained "\\x[0-9a-fA-F]{2}"
+syn match chlByte contained "\\x[0-9a-fA-F][0-9a-fA-F]"
 
 syn region chlStr start="\"" skip="\\\"" end="\"" keepend contains=chlByte
 syn region chlChar start="'" end="\\'" end="'" keepend contains=chlByte
