@@ -23,7 +23,7 @@ syn match chlDec "[0-9][0-9_]*"
 syn match chlHex "0x[0-9a-fA-F][0-9a-fA-F_]*"
 syn match chlBin "0b[01][01_]*"
 syn keyword chlBool true false
-syn keyword chlUnit {}
+syn match chlUnit "{}"
 
 syn match chlByte contained "\\x[0-9a-fA-F][0-9a-fA-F]"
 
