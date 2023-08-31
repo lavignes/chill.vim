@@ -3,7 +3,7 @@ if exists("b:current_syntax")
 endif
 
 syn keyword chlKeyword use type pkg
-syn keyword chlKeyword fn nextgroup=chlFunction
+syn keyword chlKeyword fn nextgroup=chlFunction skipwhite skipempty
 syn keyword chlStatement let return continue break
 syn keyword chlConditional if else
 syn keyword chlLoop for
