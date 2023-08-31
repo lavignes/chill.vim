@@ -52,4 +52,4 @@ hi def link chlComment Comment
 let b:current_syntax = "chl"
 set ts=4
 set sw=4
-set noet
+set et
