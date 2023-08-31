@@ -7,10 +7,11 @@ syn keyword chlStatement let return continue break
 syn keyword chlConditional if else
 syn keyword chlLoop for
 syn keyword chlQualifier pub mut extern union
-syn keyword chlOperator sizeof as << >> ^ & * ! + - / < > <= >= == != += -= *= /= %= <<= >>= ^= &= && ||
+syn keyword chlOperator sizeof as << >> ^ & * ! + - / < > <= >= == != += -= *= /= %= <<= >>= ^= &= &&
 syn match chlOperator "%"
 syn match chlOperator "\|"
 syn match chlOperator "\|="
+syn match chlOperator "\|\|"
 syn keyword chlTodo contained TODO FIXME XXX
 
 syn keyword chlType Bool
