@@ -4,7 +4,7 @@ endif
 
 syn keyword chlKeyword use type pkg nextgroup=chlIdentifier skipwhite skipempty
 syn keyword chlKeyword fn nextgroup=chlFunction skipwhite skipempty
-syn keyword chlStatement let return continue break
+syn keyword chlStatement let return continue break nextgroup=chlIdentifier skipwhite skipempty
 syn keyword chlConditional if else
 syn keyword chlLoop for
 syn keyword chlQualifier pub mut extern union
