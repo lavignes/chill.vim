@@ -9,7 +9,7 @@ syn keyword chlConditional if else
 syn keyword chlLoop for
 syn keyword chlQualifier pub mut extern union
 syn keyword chlOperator sizeof as lengthof
-syn match chlOperator display "\%(+\|-\|/\|*\|=\|\^\|i\~\|&\|?\||\|!\|>\|<\|%\)=\?"
+syn match chlOperator display "\%(+\|-\|/\|*\|=\|\^\|\~\|&\|?\||\|!\|>\|<\|%\)=\?"
 syn match chlOperator display "&&\|||"
 syn keyword chlTodo contained TODO FIXME XXX
 
