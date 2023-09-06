@@ -15,7 +15,7 @@ syn keyword chlTodo contained TODO FIXME XXX
 
 syn keyword chlType Bool
 syn keyword chlType U8 I8 U16 I16 U32 I32 U64 I64 UInt Int
-syn keyword chlType Any
+syn keyword chlType Nil Err
 
 syn match chlIdentifier "[a-zA-Z_][a-zA-Z0-9_]*"
 syn match chlFunction "[a-zA-Z_][a-zA-Z0-9_]*" display contained
