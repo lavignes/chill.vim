@@ -5,10 +5,10 @@ endif
 syn keyword chlKeyword use type pkg
 syn keyword chlKeyword fn nextgroup=chlFunction skipwhite skipempty
 syn keyword chlStatement let return continue break
-syn keyword chlConditional if else ok err
+syn keyword chlConditional if else try
 syn keyword chlLoop for
 syn keyword chlQualifier pub mut extern union
-syn keyword chlOperator sizeof as lengthof
+syn keyword chlOperator sizeof as lengthof ok err
 syn match chlOperator display "\%(+\|-\|/\|*\|=\|\^\|\~\|&\|?\||\|!\|>\|<\|%\)=\?"
 syn match chlOperator display "&&\|||"
 syn keyword chlTodo contained TODO FIXME XXX
