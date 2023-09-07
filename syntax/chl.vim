@@ -31,6 +31,7 @@ syn region chlStr start="\"" skip="\\\"" end="\"" keepend contains=chlByte
 syn region chlChar start="'" end="\\'" end="'" keepend contains=chlByte
 
 syn region chlComment start="//" end="$" keepend contains=chlTodo
+syn region chlAttr start="#\[" end="\]" keepend contains=chlIdentifier
 
 hi def link chlKeyword Keyword
 hi def link chlStatement Statement
@@ -50,6 +51,7 @@ hi def link chlStr String
 hi def link chlChar Character
 hi def link chlFunction Function
 hi def link chlComment Comment
+hi def link chlAttr PreProc
 
 let b:current_syntax = "chl"
 set ts=4
