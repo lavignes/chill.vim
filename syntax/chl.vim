@@ -15,7 +15,7 @@ syn keyword chlTodo contained TODO FIXME XXX
 
 syn keyword chlType Bool
 syn keyword chlType U8 I8 U16 I16 U32 I32 U64 I64 UInt Int
-syn keyword chlType Nil Err
+syn keyword chlType Nil
 
 syn match chlIdentifier "[a-zA-Z_][a-zA-Z0-9_]*"
 syn match chlFunction "[a-zA-Z_][a-zA-Z0-9_]*" display contained
@@ -23,6 +23,7 @@ syn match chlDec "[0-9][0-9_]*\([uiUI]\(8\|16\|32\|64\)\?\)\?"
 syn match chlHex "0x[0-9a-fA-F][0-9a-fA-F_]*\([uiUI]\(8\|16\|32\|64\)\?\)\?"
 syn match chlBin "0b[01][01_]*\([uiUI]\(8\|16\|32\|64\)\?\)\?"
 syn keyword chlBool true false
+syn keyword chlNil nil
 :w
 syn match chlByte contained "\(\\x[0-9a-fA-F][0-9a-fA-F]\)\|\\t\|\\n\|\\r\|\\\\\|\\'\|\\\""
 
@@ -43,6 +44,7 @@ hi def link chlDec Number
 hi def link chlHex Number
 hi def link chlBin Number
 hi def link chlBool Constant
+hi def link chlNil Constant
 hi def link chlByte Constant
 hi def link chlStr String
 hi def link chlChar Character
