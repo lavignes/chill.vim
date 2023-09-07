@@ -31,7 +31,7 @@ syn region chlStr start="\"" skip="\\\"" end="\"" keepend contains=chlByte
 syn region chlChar start="'" end="\\'" end="'" keepend contains=chlByte
 
 syn region chlComment start="//" end="$" keepend contains=chlTodo
-syn region chlAttr start="#\[" end="\]" keepend contains=chlIdentifier
+syn region chlAttr start="#\[" end="\]" keepend contains=chlIdentifier,chlStr
 
 hi def link chlKeyword Keyword
 hi def link chlStatement Statement
