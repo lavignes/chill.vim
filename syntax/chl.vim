@@ -27,7 +27,7 @@ syn keyword chlNil nil
 syn match chlByte contained "\(\\x[0-9a-fA-F][0-9a-fA-F]\)\|\\t\|\\n\|\\r\|\\\\\|\\'\|\\\""
 
 syn region chlStr start="\"" skip="\\\"" end="\"" keepend contains=chlByte
-syn region chlChar start="'" end="\\'" end="'" keepend contains=chlByte
+syn region chlChar start="'" end="\\'" end="'\([uiUI]\(8\|16\|32\|64\)\?\)\?" keepend contains=chlByte
 
 syn region chlComment start="//" end="$" keepend contains=chlTodo
 syn region chlAttr start="#\[" end="\]" keepend contains=chlIdentifier,chlStr
