@@ -11,10 +11,10 @@ syn keyword chlQualifier pub mut extern union
 syn keyword chlOperator sizeof as lengthof ok err
 syn match chlOperator display "\%(+\|-\|/\|*\|=\|\^\|\~\|&\|?\||\|!\|>\|<\|%\)=\?"
 syn match chlOperator display "&&\|||"
-syn keyword chlTodo contained TODO FIXME XXX
+syn keyword chlTodo contained TODO todo FIXME fixme XXX xxx
 
 syn keyword chlType Bool
-syn keyword chlType U8 I8 U16 I16 U32 I32 U64 I64 UInt Int
+syn keyword chlType U8 I8 U16 I16 U32 I32 U64 I64 UInt Int Err
 syn keyword chlType Nil
 
 syn match chlIdentifier "[a-zA-Z_][a-zA-Z0-9_]*"
@@ -24,7 +24,6 @@ syn match chlHex "0x[0-9a-fA-F][0-9a-fA-F_]*\([uiUI]\(8\|16\|32\|64\)\?\)\?"
 syn match chlBin "0b[01][01_]*\([uiUI]\(8\|16\|32\|64\)\?\)\?"
 syn keyword chlBool true false
 syn keyword chlNil nil
-:w
 syn match chlByte contained "\(\\x[0-9a-fA-F][0-9a-fA-F]\)\|\\t\|\\n\|\\r\|\\\\\|\\'\|\\\""
 
 syn region chlStr start="\"" skip="\\\"" end="\"" keepend contains=chlByte
