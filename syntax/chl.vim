@@ -8,7 +8,7 @@ syn keyword chlStatement let return continue break
 syn keyword chlConditional if else try switch
 syn keyword chlLoop for
 syn keyword chlQualifier pub mut extern union
-syn keyword chlOperator sizeof as lengthof ok err
+syn keyword chlOperator sizeof as lengthof ok err some
 syn match chlOperator display "\%(+\|-\|/\|*\|=\|\^\|\~\|&\|?\||\|!\|>\|<\|%\)=\?"
 syn match chlOperator display "&&\|||"
 syn keyword chlTodo contained TODO todo FIXME fixme XXX xxx
@@ -23,7 +23,7 @@ syn match chlDec "[0-9][0-9_]*\([uiUI]\(8\|16\|32\|64\)\?\)\?"
 syn match chlHex "0x[0-9a-fA-F][0-9a-fA-F_]*\([uiUI]\(8\|16\|32\|64\)\?\)\?"
 syn match chlBin "0b[01][01_]*\([uiUI]\(8\|16\|32\|64\)\?\)\?"
 syn keyword chlBool true false
-syn keyword chlNil nil
+syn keyword chlNil nil none
 syn match chlByte contained "\(\\x[0-9a-fA-F][0-9a-fA-F]\)\|\\t\|\\n\|\\r\|\\\\\|\\'\|\\\""
 
 syn region chlStr start="\"" skip="\\\"" end="\"" keepend contains=chlByte
